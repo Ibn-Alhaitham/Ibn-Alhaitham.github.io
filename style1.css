@@ -1,0 +1,728 @@
+html {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+body {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+div {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+span {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+object {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+iframe {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+h1 {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+h2 {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+h3 {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+h4 {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+h5 {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+h6 {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+p {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+blockquote {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+pre {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+abbr {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+address {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+cite {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+code {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+del {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+dfn {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+em {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+img {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+ins {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+kbd {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+q {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+samp {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+small {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+strong {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+sub {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+sup {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+var {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+b {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+i {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+dl {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+dt {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+dd {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+ol {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+ul {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+li {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+fieldset {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+form {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+label {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+legend {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+table {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+caption {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+tbody {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+tfoot {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+thead {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+tr {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+th {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+td {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+article {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+aside {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+canvas {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+details {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+figcaption {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+figure {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+footer {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+header {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+hgroup {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+menu {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+nav {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+section {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+summary {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+time {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+mark {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+audio {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+video {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+article {
+	display: block;
+}
+aside {
+	display: block;
+}
+details {
+	display: block;
+}
+figcaption {
+	display: block;
+}
+figure {
+	display: block;
+}
+footer {
+	display: block;
+}
+header {
+	display: block;
+}
+hgroup {
+	display: block;
+}
+menu {
+	display: block;
+}
+nav {
+	display: block;
+}
+section {
+	display: block;
+}
+blockquote {
+	quotes: none;
+}
+q {
+	quotes: none;
+}
+blockquote::before {
+	content: none;
+}
+blockquote::after {
+	content: none;
+}
+q::before {
+	content: none;
+}
+q::after {
+	content: none;
+}
+ins {
+	color: rgb(0, 0, 0); text-decoration: none; background-color: rgb(255, 255, 153);
+}
+mark {
+	color: rgb(0, 0, 0); font-style: italic; font-weight: bold; background-color: rgb(255, 255, 153);
+}
+del {
+	text-decoration: line-through;
+}
+abbr[title] {
+	border-bottom-color: currentColor; border-bottom-width: 1px; border-bottom-style: dotted; cursor: help;
+}
+dfn[title] {
+	border-bottom-color: currentColor; border-bottom-width: 1px; border-bottom-style: dotted; cursor: help;
+}
+table {
+	border-collapse: collapse; border-spacing: 0;
+}
+hr {
+	border-width: 1px 0px 0px; border-style: solid none none; border-color: rgb(204, 204, 204) currentColor currentColor; margin: 1em 0px; padding: 0px; height: 1px; display: block;
+}
+input {
+	vertical-align: middle;
+}
+select {
+	vertical-align: middle;
+}
+pre {
+	font-family: monospace, sans-serif;
+}
+code {
+	font-family: monospace, sans-serif;
+}
+kbd {
+	font-family: monospace, sans-serif;
+}
+samp {
+	font-family: monospace, sans-serif;
+}
+html {
+	overflow-y: scroll;
+}
+nav ul {
+	list-style: none; margin: 0px;
+}
+nav li {
+	list-style: none; margin: 0px;
+}
+small {
+	font-size: 85%;
+}
+td {
+	vertical-align: top;
+}
+sub {
+	line-height: 0; font-size: 75%; position: relative;
+}
+sup {
+	line-height: 0; font-size: 75%; position: relative;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+pre {
+	padding: 15px; white-space: pre-wrap; word-wrap: break-word;
+}
+.ie7 img {
+	-ms-interpolation-mode: bicubic;
+}
+a:link {
+	-webkit-tap-highlight-color: #FF5E99;
+}
+body {
+	color: rgb(102, 102, 102);
+}
+select {
+	color: rgb(102, 102, 102);
+}
+input {
+	color: rgb(102, 102, 102);
+}
+textarea {
+	color: rgb(102, 102, 102);
+}
+body {
+	background: url("/static/images/bg_aside_main.png") repeat-y 0px 0px; font-family: "PT Sans", Arial, sans-serif; font-size: 13px; zoom: 1;
+}
+/*
+body section[role=navigation] {
+	padding: 25px 0px; left: 0px; top: 0px; width: 271px; height: auto; position: absolute;
+}*/
+body section[role=main] {
+	padding: 25px; height: 100%; margin-left: 271px; min-width: 669px; background-color: rgb(255, 255, 255);
+}
+select {
+	font: 99%/normal sans-serif; font-size-adjust: none; font-stretch: normal;
+}
+input {
+	font: 99%/normal sans-serif; font-size-adjust: none; font-stretch: normal;
+}
+textarea {
+	font: 99%/normal sans-serif; font-size-adjust: none; font-stretch: normal;
+}
+button {
+	font: 99%/normal sans-serif; font-size-adjust: none; font-stretch: normal;
+}
+h1 {
+	font-weight: bold;
+}
+h2 {
+	font-weight: bold;
+}
+h3 {
+	font-weight: bold;
+}
+h4 {
+	font-weight: bold;
+}
+h5 {
+	font-weight: bold;
+}
+h6 {
+	font-weight: bold;
+}
+strong {
+	font-weight: bold;
+}
+b {
+	font-weight: bold;
+}
+th {
+	font-weight: bold;
+}
+em {
+	font-style: italic;
+}
+i {
+	font-style: italic;
+}
+ul {
+	margin: 0px 0px 1em 1em;
+}
+ol {
+	margin: 0px 0px 1em 1em;
+}
+ol {
+	margin-left: 2em;
+}
+ol {
+	list-style-type: decimal;
+}
+a {
+	color:#2779c3
+}
+a:hover {
+	
+}
+a:hover {
+	
+}
+a:active {
+	color:#2779c3
+}
+a.outside {
+	background-position: right top; padding-right: 10px; background-repeat: no-repeat;
+}
+body.fixed {
+	background-image: none; background-color: rgb(230, 230, 230);
+}
+.fixed .fixed-wraper {
+	background: url("/static/images/bg_aside_main.png") repeat-y 263px 0px; margin: 0px auto; width: 990px; position: relative;
+}
+.fixed .fixed-wraper section[role=main] {
+	background-position: right; padding-right: 32px; min-width: 0px; background-image: url("/static/images/bg_fixed.png"); background-repeat: repeat-y;
+}
+.small {
+	width: 33%;
+}
+.medium {
+	width: 66%;
+}
+.large {
+	width: 99%;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+section[role=navigation] header {
+	margin: 0px 2px 25px 0px; padding-left: 25px;
+}
+section[role=navigation] header a {
+	background: url("/static/images/sample_logo.png") no-repeat; width: 148px; height: 31px; text-indent: -9999em; display: block;
+}
+section[role=navigation] header h1 {
+	font-style: italic; font-weight: normal; margin-top: 3px; text-shadow: none;
+}
+#user-info {
+	background: url("/static/images/bg_aside_userinfo.png") no-repeat; margin: 0px 2px 25px 0px; padding: 18px 25px; height: 55px; border-top-color: currentColor; border-top-width: 1px; border-top-style: solid;
+}
+#user-info img {
+	padding: 3px; border: 1px solid currentColor; width: 48px; height: 48px; float: left; background-color: rgb(255, 255, 255);
+}
+#user-info div {
+	margin-left: 2px; float: left;
+}
+#user-info div > a {
+	line-height: 100%; font-size: 108%; text-decoration: none; display: block;
+}
+#user-info em {
+	font-size: 93%;
+}
+#user-info ul {
+	list-style: none; margin: 5px 0px 0px;
+}
+#user-info ul li {
+	margin-right: 5px; float: left;
+}
+#user-info ul li:last-child {
+	margin-right: 0px;
+}
+#user-info .button-link {
+	font-size: 80%;
+}
+#main-nav {
+	font-size: 116%; margin-bottom: 25px;
+}
+#main-nav ul li.current a {
+	color:rgb(110 33 181);
+}
+#main-nav ul li.current a:hover {
+	
+}
+#main-nav ul li a:hover {
+	color:rgb(110 33 181);
+}
+#main-nav ul li li a:hover {
+	
+}
+#main-nav ul li.current li a:hover {
+	
+}
+#main-nav > ul {
+	background-repeat: no-repeat;
+}
+#main-nav > ul li {
+	background-repeat: no-repeat;
+}
+#main-nav > ul li.current {
+	background-repeat: no-repeat;
+}
+#main-nav ul li li {
+	background-repeat: no-repeat;
+}
+#main-nav > ul {
+	background-position: bottom;
+}
+#main-nav > ul li {
+	
+}
+#main-nav > ul li.current {
+	
+}
+#main-nav > ul li:last-child {
+	padding-bottom: 2px;
+}
+/*#main-nav ul li a {*/
+	/*color:#2779c3;background-position: 25px 8px; padding: 7px 0px 7px 50px; height: 21px; font-weight: bold; text-decoration: none; display: block; background-repeat: no-repeat; -webkit-transition: color 400ms ease; -moz-transition: color 400ms ease; transition: color 400ms ease;*/
+/*}*/
+#main-nav ul ul {
+	padding-bottom: 10px; margin-left: 50px;
+}
+
+#main-nav ul li li.current {
+	background-position: 0px 9px; padding: 2px 0px 2px 10px;
+}
+#main-nav ul li li a {
+	padding: 0px; height: auto; font-size: 85%; font-weight: normal; text-shadow: none;
+}
+#main-nav ul li.current li a {
+	padding: 0px; height: auto; font-size: 85%; font-weight: normal; text-shadow: none;
+}
+#main-nav ul li span {
+	padding: 2px 5px; border-radius: 3px; border: 1px solid currentColor;  font-size: 77%; margin-right: 20px; float: right; display: block; position: relative; cursor: pointer; -moz-border-radius: 3px;margin-top:3px;
+}
+.ie7 #main-nav ul li span {
+	top: -28px;
+}
+.ie8 #main-nav ul li span {
+	top: -28px;
+}
+#main-nav ul li a.dashboard {
+	background-image: url("/static/images/icon_nav_dashboard.png");
+}
+#main-nav ul li a.registerReport {
+	background-image: url("/static/images/icon_nav_dashboard.png");
+}
+#main-nav ul li a.AcademyServey {
+	background-image: url("/static/images/icon_nav_dashboard.png");
+}
+#main-nav ul li a.projects {
+	background-image: url("/static/images/icon_nav_projects.png");
+}
+#main-nav ul li a.products {
+	background-image: url("/static/images/icon_nav_products.png");
+}
+#main-nav ul li a.events {
+	background-image: url("/static/images/icon_nav_events.png");
+}
+#main-nav ul li a.gallery {
+	background-image: url("/static/images/icon_nav_gallery.png");
+}
+#main-nav ul li a.settings {
+	background-image: url("/static/images/icon_nav_settings.png");
+}
+#main-nav ul li a.mansmail {
+	background-image: url("/static/images/icon_nav_mansmail.png");
+}
+.sidebar {
+	margin: 0px 27px 25px 25px; overflow: hidden; clear: both; font-size: 93%; display: block;
+}
+.sidebar p {
+	margin: 8px 0px; line-height: 140%;
+}
+.sidebar p:last-child {
+	margin-bottom: 0px;
+}
+.sidebar ul {
+	margin: 0px 0px 15px 15px;
+}
+.sidebar h2 {
+	font-size: 116%; margin-bottom: 12px;
+}
+.sidebar img {
+	margin: 0px auto 25px; padding: 3px; border: 1px solid currentColor;
+}
+.separator.sidebar {
+	padding-top: 8px; border-top-color: currentColor; border-top-width: 3px; border-top-style: solid;
+}
+.sidebar .separator {
+	padding-top: 8px; border-top-color: currentColor; border-top-width: 3px; border-top-style: solid;
+}
+.separator.sidebar {
+	padding-top: 25px;
+}
+.sidebar .button-link {
+	float: right;
+}
+#widgets-container {
+	display: block;
+}
+.widget {
+	margin: 0px 15px 15px 0px; padding: 5px; border-radius: 3px; border: 1px solid currentColor; width: 160px; height: 35px; font-size: 93%; float: left; display: block; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+}
+.ie7 .widget {
+	margin-bottom: 0px;
+}
+.widget a {
+	text-decoration: none; display: block;
+}
+.widget span {
+	
+}
+:last-child.widget {
+	margin-right: 0px;
+}
+.widget span {
+	width: 36px; height: 35px; text-align: center; line-height: 80%; font-size: 350%; margin-right: 10px; float: left; display: block;
+}
+.widget p {
+	top: -4px; float: left; position: relative;
+}
+.widget strong {
+	font-size: 153.9%; display: block;
+}
+.widget strong sup {
+	top: -0.3em;
+}
+.text-only.widget p {
+	padding-left: 5px;
+}
+.add-new-widget.widget {
+	border-style: dashed;
+}
+.add-new-widget.widget span {
+	text-indent: -9999em; margin-right: 2px; background-repeat: no-repeat;
+}
+.add-new-widget.widget strong {
+	padding-top: 5px;
+}
+.widget .close-widget {
+	top: -8px; text-decoration: none; float: right; position: relative;
+}
+.widget  span {
+	text-indent: -9999em;
+	background-repeat: no-repeat;
+}
+.nested {
+	border-color: currentColor; padding: 15px; border-radius: 3px; overflow: hidden; -moz-border-radius: 3px;
+}
+.clearrm {
+	margin-right: 0px;
+}
+.clearfix {
+	clear: both; zoom: 1;
+}
+.button-switch {
+	display: block;
+}
+.button-switch li {
+	list-style: none; margin-right: 7px; float: left;
+}
+.button-switch li:last-child {
+	margin-right: 2px;
+}
+.button-switch li a.button {
+	padding: 4px 15px; height: 18px;
+}
+.button-link {
+	border-radius: 3px; width: auto; overflow: visible; text-decoration: none; vertical-align: baseline; display: inline-block; white-space: nowrap; cursor: pointer; text-shadow: 0px 1px 2px #666; -webkit-transition: all 400ms ease; -moz-transition: all 400ms ease; transition: all 400ms ease; -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-transition: all 400ms ease;
+}
+.button {
+	border-radius: 3px; width: auto; overflow: visible; text-decoration: none; vertical-align: baseline; display: inline-block; white-space: nowrap; cursor: pointer; text-shadow: 0px 1px 2px #666; -webkit-transition: all 400ms ease; -moz-transition: all 400ms ease; transition: all 400ms ease; -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-transition: all 400ms ease;
+}
+button {
+	border-radius: 3px; width: auto; overflow: visible; text-decoration: none; vertical-align: baseline; display: inline-block; white-space: nowrap; cursor: pointer; text-shadow: 0px 1px 2px #666; -webkit-transition: all 400ms ease; -moz-transition: all 400ms ease; transition: all 400ms ease; -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-transition: all 400ms ease;
+}
+article section p .button-link {
+	padding: 0px 6px;
+}
+.button-link {
+	padding: 2px 6px; border: currentColor; color: rgb(255, 255, 255); background-color: rgb(78 95 195);
+}
+.blue.button-link {
+	background-color: rgb(6, 109, 153);
+}
+.green.button-link {
+	background-color: rgb(106, 153, 18);
+}
+.gray.button-link {
+	background-color: rgb(146, 148, 148);
+}
+.button-link:hover {
+	color: rgb(255, 255, 255); background-color: rgb(76, 76, 76);
+}
+.button {
+	padding: 4px 15px; border: 1px solid currentColor; height: 28px; font-weight: bold; margin-bottom: 2px;
+}
+button {
+	padding: 4px 15px; border: 1px solid currentColor; height: 28px; font-weight: bold; margin-bottom: 2px;
+}
+a.button {
+	height: 18px; font-weight: normal;
+}
+span.button {
+	height: 18px; font-weight: normal;
+}
+.disabled.button {
+	font-weight: normal; cursor: not-allowed; box-shadow: none; text-shadow: none;
+}
+button:disabled {
+	font-weight: normal; cursor: not-allowed; box-shadow: none; text-shadow: none;
+}
+
+
