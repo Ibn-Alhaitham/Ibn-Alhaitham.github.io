@@ -344,7 +344,7 @@ textarea {
 	color: rgb(102, 102, 102);
 }
 body {
-	background: url("/static/images/bg_aside_main.png") repeat-y 0px 0px; font-family: "PT Sans", Arial, sans-serif; font-size: 13px; zoom: 1;
+	background: url("https://ibn-alhaitham.github.io/static/images/bg_aside_main.png") repeat-y 0px 0px; font-family: "PT Sans", Arial, sans-serif; font-size: 13px; zoom: 1;
 }
 /*
 body section[role=navigation] {
@@ -429,10 +429,10 @@ body.fixed {
 	background-image: none; background-color: rgb(230, 230, 230);
 }
 .fixed .fixed-wraper {
-	background: url("/static/images/bg_aside_main.png") repeat-y 263px 0px; margin: 0px auto; width: 990px; position: relative;
+	background: url("https://ibn-alhaitham.github.io/static/images/bg_aside_main.png") repeat-y 263px 0px; margin: 0px auto; width: 990px; position: relative;
 }
 .fixed .fixed-wraper section[role=main] {
-	background-position: right; padding-right: 32px; min-width: 0px; background-image: url("/static/images/bg_fixed.png"); background-repeat: repeat-y;
+	background-position: right; padding-right: 32px; min-width: 0px; background-image: url("https://ibn-alhaitham.github.io/static/images/bg_fixed.png"); background-repeat: repeat-y;
 }
 .small {
 	width: 33%;
@@ -453,13 +453,13 @@ section[role=navigation] header {
 	margin: 0px 2px 25px 0px; padding-left: 25px;
 }
 section[role=navigation] header a {
-	background: url("/static/images/sample_logo.png") no-repeat; width: 148px; height: 31px; text-indent: -9999em; display: block;
+	background: url("https://ibn-alhaitham.github.io/static/images/sample_logo.png") no-repeat; width: 148px; height: 31px; text-indent: -9999em; display: block;
 }
 section[role=navigation] header h1 {
 	font-style: italic; font-weight: normal; margin-top: 3px; text-shadow: none;
 }
 #user-info {
-	background: url("/static/images/bg_aside_userinfo.png") no-repeat; margin: 0px 2px 25px 0px; padding: 18px 25px; height: 55px; border-top-color: currentColor; border-top-width: 1px; border-top-style: solid;
+	background: url("https://ibn-alhaitham.github.io/static/images/bg_aside_userinfo.png") no-repeat; margin: 0px 2px 25px 0px; padding: 18px 25px; height: 55px; border-top-color: currentColor; border-top-width: 1px; border-top-style: solid;
 }
 #user-info img {
 	padding: 3px; border: 1px solid currentColor; width: 48px; height: 48px; float: left; background-color: rgb(255, 255, 255);
@@ -553,31 +553,31 @@ section[role=navigation] header h1 {
 	top: -28px;
 }
 #main-nav ul li a.dashboard {
-	background-image: url("/static/images/icon_nav_dashboard.png");
+	background-image: url("https://ibn-alhaitham.github.io/static/images/icon_nav_dashboard.png");
 }
 #main-nav ul li a.registerReport {
-	background-image: url("/static/images/icon_nav_dashboard.png");
+	background-image: url("https://ibn-alhaitham.github.io/static/images/icon_nav_dashboard.png");
 }
 #main-nav ul li a.AcademyServey {
-	background-image: url("/static/images/icon_nav_dashboard.png");
+	background-image: url("https://ibn-alhaitham.github.io/static/images/icon_nav_dashboard.png");
 }
 #main-nav ul li a.projects {
-	background-image: url("/static/images/icon_nav_projects.png");
+	background-image: url("https://ibn-alhaitham.github.io/static/images/icon_nav_projects.png");
 }
 #main-nav ul li a.products {
-	background-image: url("/static/images/icon_nav_products.png");
+	background-image: url("https://ibn-alhaitham.github.io/static/images/icon_nav_products.png");
 }
 #main-nav ul li a.events {
-	background-image: url("/static/images/icon_nav_events.png");
+	background-image: url("https://ibn-alhaitham.github.io/static/images/icon_nav_events.png");
 }
 #main-nav ul li a.gallery {
-	background-image: url("/static/images/icon_nav_gallery.png");
+	background-image: url("https://ibn-alhaitham.github.io/static/images/icon_nav_gallery.png");
 }
 #main-nav ul li a.settings {
-	background-image: url("/static/images/icon_nav_settings.png");
+	background-image: url("https://ibn-alhaitham.github.io/static/images/icon_nav_settings.png");
 }
 #main-nav ul li a.mansmail {
-	background-image: url("/static/images/icon_nav_mansmail.png");
+	background-image: url("https://ibn-alhaitham.github.io/static/images/icon_nav_mansmail.png");
 }
 .sidebar {
 	margin: 0px 27px 25px 25px; overflow: hidden; clear: both; font-size: 93%; display: block;
