@@ -1,0 +1,2081 @@
+/* ============================================
+   Student Card Design - Portal Student
+   ============================================ */
+
+.student-card-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* البطاقات */
+.student-card {
+    border-radius: 12px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* رأس البطاقة */
+.card-header {
+    padding: 14px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+/* محتوى البطاقة */
+.card-body {
+    padding: 20px;
+}
+
+/* جدول داخل البطاقة */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-table td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+.info-table .label {
+    font-weight: bold;
+    width: 25%;
+}
+
+.info-table .value {
+    width: 25%;
+}
+
+.info-table .label-wide {
+    font-weight: bold;
+    width: 20%;
+}
+
+.info-table .value-wide {
+    width: 80%;
+}
+
+/* خط فاصل */
+.divider {
+    border-bottom: 1px solid #eee;
+}
+
+/* ألوان البطاقات */
+.card-blue {
+    background-color: #e8f0f5;
+}
+.card-blue .card-header {
+    background-color: #1a5a8a;
+}
+
+.card-green {
+    background-color: #e8f5e9;
+}
+.card-green .card-header {
+    background-color: #5a9c6e;
+}
+
+.card-orange {
+    background-color: #fef5e8;
+}
+.card-orange .card-header {
+    background-color: #e68a2e;
+}
+
+.card-gray {
+    background-color: #f5f5f5;
+}
+.card-gray .card-header {
+    background-color: #7f8c8d;
+}
+
+.card-red {
+    background-color: #fce4e4;
+}
+.card-red .card-header {
+    background-color: #c0392b;
+}
+
+.card-purple {
+    background-color: #f3e8ff;
+}
+.card-purple .card-header {
+    background-color: #8e44ad;
+}
+
+/* جدول الجزاءات */
+.sanctions-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.sanctions-table th {
+    background-color: #e8a5a5;
+    padding: 10px;
+    text-align: center;
+}
+
+.sanctions-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* قائمة الرغبات */
+.desirables-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.desirables-list li {
+    padding: 8px 12px;
+    margin: 5px 0;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    font-weight: bold;
+}
+/* ============================================
+   تنسيق تقديرات المقررات (Grades)
+   ============================================ */
+/* ============================================
+   تنسيق تقديرات المقررات (Courses Grades)
+   ============================================ */
+
+/* تحديد الخط العام */
+#divContents,
+.grades-header,
+.student-info-card,
+.grades-table,
+.semester-summary {
+    font-family: 'Segoe UI', 'Tahoma', 'Arial', sans-serif;
+}
+
+/* الهيدر */
+.grades-header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.grades-header h1 {
+    color: #2c7ab1;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #2c7ab1;
+}
+
+.grades-header h3 {
+    color: #555;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 3px;
+}
+
+/* بطاقة معلومات الطالب */
+.student-info-card {
+    background: #2c7ab1;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.student-info-card td {
+    padding: 3px 6px;
+    font-size: 13px;
+    color: white;
+}
+
+.student-info-card .student-label {
+    font-weight: 600;
+    opacity: 0.85;
+    font-size: 12px;
+}
+
+.student-info-card .student-value {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/* عنوان الفصل */
+.semester-title {
+    display: inline-block;
+    background: #e8f0f5;
+    color: #2c7ab1;
+    padding: 3px 14px;
+    border-radius: 20px;
+    margin: 10px 0 8px 0;
+    font-weight: 600;
+    font-size: 13px;
+    border-right: 3px solid #2c7ab1;
+}
+
+/* حاوية الجدول */
+.grades-container {
+    max-width: 100%;
+    overflow-x: auto;
+    margin-bottom: 10px;
+}
+
+/* جدول التقديرات */
+.grades-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    font-size: 13px;
+}
+
+.grades-table th {
+    background: #e8f0f5;
+    color: #2c7ab1;
+    font-weight: 600;
+    padding: 6px 4px;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #d0e0e8;
+}
+
+.grades-table td {
+    padding: 5px 4px;
+    border: 1px solid #eee;
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+}
+
+.grades-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* اسم المقرر */
+.grades-table td:nth-child(2) {
+    text-align: right;
+    font-size: 13px;
+}
+
+/* ألوان التقديرات */
+.grade-excellent {
+    color: #2e7d32;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.grade-very-good {
+    color: #1976d2;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.grade-good {
+    color: #f57c00;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.grade-pass {
+    color: #9c27b0;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.grade-fail {
+    color: #c62828;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* ملخص الفصل */
+.semester-summary {
+    background: #f5f7f9;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin: 5px 0 3px 0;
+    border-right: 3px solid #2c7ab1;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.semester-summary span {
+    display: inline-block;
+    margin-left: 12px;
+    font-size: 12px;
+}
+
+.semester-summary .highlight {
+    color: #2c7ab1;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* حالة الحظر */
+.block-result {
+    background: #ffebee;
+    color: #c62828;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    padding: 8px;
+    border-radius: 6px;
+    margin: 8px 0;
+}
+
+/* رسائل الخطأ */
+.error-message {
+    background: #ffebee;
+    color: #c62828;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 15px;
+    font-size: 13px;
+}
+
+/* للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .grades-table th,
+    .grades-table td {
+        padding: 4px 3px;
+        font-size: 11px;
+    }
+
+    .grades-table td:nth-child(2) {
+        font-size: 11px;
+    }
+
+    .semester-summary span {
+        display: block;
+        margin-bottom: 3px;
+        margin-left: 0;
+    }
+
+    .student-info-card td {
+        display: block;
+        text-align: center;
+        padding: 2px;
+    }
+}
+
+
+
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+@media (max-width: 768px) {
+    .info-table td {
+        display: block;
+        width: 100%;
+        padding: 8px;
+    }
+    .info-table .label {
+        width: 100%;
+        background-color: #f9f9f9;
+    }
+    .info-table .value {
+        width: 100%;
+    }
+    .sanctions-table th,
+    .sanctions-table td {
+        display: block;
+        text-align: right;
+    }
+}
+/* ============================================
+   تنسيق الجدول الدراسي - الشكل الثاني
+   ============================================ */
+
+/* ====== الهيدر ====== */
+.timetable-header-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.timetable-header-logo h3 {
+    color: #2c7ab1;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* ====== معلومات الطالب ====== */
+.timetable-student-info {
+    background: linear-gradient(135deg, #f5f9fc 0%, #e8f0f5 100%);
+    padding: 14px 18px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border-right: 4px solid #2c7ab1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.timetable-student-info td {
+    padding: 6px 5px;
+    font-size: 13px;
+}
+
+.student-name-red {
+    color: #1a3a5c;
+    font-weight: 600;
+}
+
+.student-name-red b {
+    color: #2c7ab1;
+}
+
+/* ====== الجدول ====== */
+.timetable-shape2-container {
+    max-width: 100%;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.timetable-shape2-table {
+    width: 100%;
+   border-collapse: separate !important;
+    border: 1px solid #C0B8B8;
+    background: #fff;
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    font-size: 13px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.timetable-shape2-table thead th {
+    background: linear-gradient(135deg, #2c7ab1 0%, #1a5a8a 100%);
+    color: white;
+    font-weight: 700;
+    padding: 12px 10px;
+    text-align: center;
+    font-size: 13px;
+    border: none;
+}
+
+.timetable-shape2-table td {
+    padding: 8px 8px;
+    border: 1px solid #C0B8B8;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 12px;
+    color: #1a3a5c;
+}
+
+
+
+
+
+/* ====== استجابة ====== */
+@media (max-width: 768px) {
+    .timetable-shape2-table {
+        font-size: 11px;
+    }
+
+    .timetable-shape2-table thead th {
+        font-size: 11px;
+        padding: 8px 5px;
+    }
+
+    .timetable-shape2-table td {
+        padding: 5px 4px;
+        font-size: 10px;
+    }
+
+    .timetable-student-info td {
+        font-size: 11px;
+        padding: 4px;
+    }
+
+    .timetable-student-info {
+        padding: 10px 12px;
+    }
+
+    .timetable-header-logo h3 {
+        font-size: 14px;
+    }
+
+    .timetable-header-logo img {
+        width: 50px !important;
+        height: auto !important;
+    }
+}
+.exam-seats-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #333;
+    background: #fff;
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    font-size: 13px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+/* صف العنوان الرئيسي */
+.exam-header-title td {
+    background: linear-gradient(135deg, #2c7ab1 0%, #1a5a8a 100%);
+    color: white;
+    font-weight: 700;
+    padding: 12px 15px;
+    font-size: 16px;
+}
+
+/* صف أعمدة الجدول */
+.exam-header-columns th {
+    background: #e8f0f5;
+    color: #2c7ab1;
+    font-weight: 600;
+    padding: 10px 8px;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 2px solid #2c7ab1;
+}
+
+/* خلايا الجدول */
+.exam-seats-table tbody td {
+    padding: 8px 6px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+/* صفوف الجدول */
+.exam-seats-table tbody tr:hover {
+    background-color: #f5f8fc;
+}
+
+/* اسم المقرر مع التنسيق الإضافي */
+.exam-concat-name {
+    font-weight: bold;
+    color: #c62828;
+}
+
+/* رسالة عدم وجود مقاعد */
+.no-seat-message {
+    color: #999;
+    font-style: italic;
+}
+
+/* زر الطباعة */
+#printExamSeats {
+    margin-bottom: 15px;
+}
+
+/* تنسيق الطباعة */
+@media print {
+    .exam-seats-table {
+        box-shadow: none;
+        border: 1px solid #000;
+    }
+    .exam-header-title td {
+        background: #2c7ab1 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    .exam-header-columns th {
+        background: #e8f0f5 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
+/* للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .exam-seats-table {
+        font-size: 11px;
+    }
+
+    .exam-seats-table th,
+    .exam-seats-table td {
+        padding: 4px 3px;
+    }
+
+    .exam-header-title td {
+        font-size: 13px;
+    }
+}
+/* ============================================
+   تنسيق الإنذارات الأكاديمية (Academic Warnings)
+   ============================================ */
+
+.warning-container {
+    max-width: 100%;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif ;
+    width: calc(48vw - 30px);
+}
+
+.warning-header h2 {
+    color: #2c7ab1;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #2c7ab1;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.warning-options {
+    background: #f5f7fa;
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.warning-label {
+    font-weight: 600;
+    color: #333;
+    margin-left: 20px;
+    font-size: 14px;
+     font-family: 'Segoe UI', Tahoma, Arial, sans-serif !important;
+}
+
+.warning-radio-group {
+    display: inline-flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.warning-radio-group input[type="radio"] {
+    margin-left: 5px;
+    accent-color: #2c7ab1;
+}
+
+.warning-radio-group label {
+    font-size: 13px;
+    color: #555;
+    cursor: pointer;
+}
+
+.warning-radio-group label:hover {
+    color: #2c7ab1;
+}
+
+/* ====== تقرير الإنذارات ====== */
+.warning-report-container {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.warning-report-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.warning-report-header h3 {
+    color: #2c7ab1;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.warning-report-date {
+    color: #888;
+    font-size: 12px;
+}
+
+.warning-report-container hr {
+    border: none;
+    border-top: 2px dashed #e0e0e0;
+    margin: 10px 0 20px 0;
+}
+
+/* ====== جدول الإنذارات ====== */
+.warning-table-container {
+    overflow-x: auto;
+}
+
+.warning-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.warning-table thead th {
+    background: linear-gradient(135deg, #2c7ab1 0%, #1a5a8a 100%);
+    color: white;
+    font-weight: 600;
+    padding: 12px 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.warning-table tbody td {
+    padding: 10px 8px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.warning-table tbody tr:hover {
+    background-color: #f5f8fc;
+}
+
+.warning-table tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.warning-table tbody tr:nth-child(even):hover {
+    background-color: #f0f4f9;
+}
+
+/* ألوان خاصة */
+.warning-percentage {
+    color: #c62828;
+    font-weight: 700;
+    background: #ffebee;
+    padding: 3px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.warning-gpa {
+    color: #1976d2;
+    font-weight: 700;
+    background: #e3f2fd;
+    padding: 3px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.warning-failures {
+    color: #e65100;
+    font-weight: 700;
+    background: #fff3e0;
+    padding: 3px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+/* ====== رسائل ====== */
+.loading-message {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+}
+
+.loading-message img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.no-data-message {
+    text-align: center;
+    padding: 30px;
+    color: #999;
+    font-size: 14px;
+}
+
+/* ====== استجابة ====== */
+@media (max-width: 768px) {
+    .warning-options {
+        padding: 12px;
+    }
+    .warning-radio-group {
+        display: block;
+        margin-top: 10px;
+    }
+    .warning-radio-group label {
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .warning-table th,
+    .warning-table td {
+        padding: 6px 4px;
+        font-size: 11px;
+    }
+    .warning-report-header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* ============================================
+   تنسيق الـ user-info (فوق المنيو)
+   ============================================ */
+
+/* ====== تحديد الخط العام ====== */
+#navigation,
+#navigation * {
+    font-family: 'Segoe UI', 'Tahoma', Arial, sans-serif !important;
+}
+
+/* ====== الـ Header ====== */
+#navigation > HEADER {
+    padding: 12px 0 10px 0;
+    border-bottom: 1px solid #e8eef3;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#navigation > HEADER .university-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a5a8a;
+    margin: 0 0 2px 0;
+    font-family: 'Segoe UI', 'Tahoma', Arial, sans-serif !important;
+}
+
+#navigation > HEADER em {
+    font-size: 11px;
+    color: #5a7a9a;
+    font-style: normal;
+    font-family: 'Segoe UI', 'Tahoma', Arial, sans-serif !important;
+}
+
+/* ====== user-info ====== */
+#user-info {
+    display: flex !important;
+    align-items: center;
+    gap: 5px !important;
+     padding: 36px 11px !important;
+    margin: 8px 15px 12px 15px !important;
+    background: linear-gradient(135deg, #f5f9fc 0%, #e8f0f5 100%) !important;
+    border-radius: 9px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+    width: auto !important;
+    overflow: visible !important;
+}
+
+/* ====== الصورة ====== */
+#UsrImg {
+    width: 54px !important;
+    height: 54px !important;
+    border-radius: 50% !important;
+    border: 2.5px solid #2c7ab1 !important;
+    object-fit: cover !important;
+    flex-shrink: 0 !important;
+    background: #ffffff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* ====== حاوية معلومات الطالب ====== */
+#user-info > DIV {
+    flex: 1;
+    min-width: 0;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+/* ====== اسم الطالب ====== */
+#stdLogName {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #1a3a5c !important;
+    cursor: default !important;
+    display: block !important;
+    line-height: 1.3 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* ====== البرنامج (نفس السطر) ====== */
+#user-info > DIV > DIV:nth-child(2) {
+    font-size: 12px !important;
+    color: #5a7a9a !important;
+    display: block !important;
+    line-height: 1.4 !important;
+    margin: 2px 0 0 0 !important;
+    padding: 0 !important;
+}
+
+#stdProgName {
+    font-weight: 600 !important;
+    color: #1a3a5c !important;
+}
+
+/* ====== الأزرار ====== */
+#user-info > DIV > DIV:last-child {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px !important;
+    align-items: center !important;
+}
+
+.user-action {
+    font-size: 11px !important;
+    text-decoration: none !important;
+    padding: 3px 12px !important;
+    border-radius: 14px !important;
+    transition: all 0.25s ease !important;
+    display: inline-block !important;
+    cursor: pointer !important;
+    border: none !important;
+    outline: none !important;
+    line-height: 1.4 !important;
+}
+
+.user-action#LogOutImg {
+    color: #c62828 !important;
+    background: rgba(198, 40, 40, 0.08) !important;
+     padding: 3px 20px !important;  /* أوسع شوية */
+    font-weight: 500 !important;
+}
+
+.user-action#LogOutImg:hover {
+    background: #c62828 !important;
+    color: white !important;
+}
+
+.user-action#ChangePass,
+.user-action#changePortalLang {
+    color: #2c7ab1 !important;
+    background: rgba(44, 122, 177, 0.08) !important;
+}
+
+.user-action#ChangePass:hover,
+.user-action#changePortalLang:hover {
+    background: #2c7ab1 !important;
+    color: white !important;
+}
+
+
+/* ====== إخفاء الـ UL القديم ====== */
+#user-info UL,
+#user-info UL LI {
+    display: none !important;
+}
+
+/* ====== استجابة للشاشات الصغيرة ====== */
+@media (max-width: 768px) {
+    #user-info {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 12px !important;
+        gap: 10px !important;
+    }
+
+    #UsrImg {
+        width: 48px !important;
+        height: 48px !important;
+    }
+
+    #stdLogName {
+        font-size: 13px !important;
+        text-align: center !important;
+    }
+
+    #stdProgName {
+        font-size: 11px !important;
+        text-align: center !important;
+    }
+
+    #user-info > DIV {
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    #user-info > DIV > DIV:last-child {
+        justify-content: center !important;
+    }
+}
+/* ============================================
+   تنسيق المنيو الجانبي (portal_menu)
+   ============================================ */
+
+/* ====== الحاوية الرئيسية ====== */
+#portal-nav {
+    position: relative;
+    height: calc(214vh - 5px) !important;
+    min-height: calc(214vh - 5px) !important;
+
+    margin: 5px 15px;
+    padding: 15px;
+
+    border-radius: 18px;
+
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden !important;
+}
+/* ====== القائمة الرئيسية ====== */
+
+#portal_menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', 'Tahoma', Arial, sans-serif !important;
+    flex: 1;
+
+    overflow: hidden !important;
+}
+/* ====== كل عنصر ====== */
+#portal_menu > li {
+    margin-bottom: 4px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+/* ====== الرابط الرئيسي ====== */
+#portal_menu > li > a {
+    display: flex !important;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px !important;
+    font-size: 13px;
+    font-weight: 500;
+    color: #1a3a5c !important;
+    background: transparent !important;
+    border-radius: 10px !important;
+    text-decoration: none !important;
+    transition: all 0.25s ease !important;
+    border: none !important;
+    height: auto !important;
+    min-height: 40px !important;
+    background-image: none !important;
+    cursor: pointer;
+    font-family: inherit !important;
+}
+
+/* ====== الأيقونة ====== */
+#portal_menu > li > a .menu-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+/* ====== النص ====== */
+#portal_menu > li > a .menu-text {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1a3a5c;
+    font-family: inherit !important;
+}
+
+/* ====== Hover (داخل المستطيل) ====== */
+#portal_menu > li:hover {
+    background: #e8f0f5 !important;
+    border-radius: 10px;
+}
+
+#portal_menu > li:hover > a {
+    background: transparent !important;
+}
+
+#portal_menu > li:hover > a .menu-text {
+    color: #2c7ab1;
+}
+
+/* ====== العنصر النشط (current) ====== */
+#portal_menu > li > a.current,
+#portal_menu > li.current {
+    background: linear-gradient(135deg, #2c7ab1 0%, #1a5a8a 100%) !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 15px rgba(44, 122, 177, 0.25);
+}
+
+#portal_menu > li > a.current .menu-text,
+#portal_menu > li.current .menu-text {
+    color: white !important;
+}
+
+#portal_menu > li > a.current .menu-icon,
+#portal_menu > li.current .menu-icon {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+}
+
+/* ====== القائمة الفرعية ====== */
+#portal_menu ul {
+    list-style: none;
+    padding: 6px 0 6px 20px;
+    margin: 0;
+    border-right: 2px solid rgba(44, 122, 177, 0.15);
+}
+
+#portal_menu ul li {
+    margin-bottom: 2px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    overflow: hidden;
+}
+
+#portal_menu ul li a {
+    display: flex !important;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 12px !important;
+    font-size: 12px;
+    font-weight: 400;
+    color: #1a3a5c !important;
+    background: transparent !important;
+    border-radius: 8px !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease !important;
+    border: none !important;
+    height: auto !important;
+    min-height: 30px !important;
+    background-image: none !important;
+    font-family: inherit !important;
+}
+
+#portal_menu ul li a .menu-icon {
+    width: 22px;
+    height: 22px;
+    font-size: 13px;
+}
+
+#portal_menu ul li a .menu-text {
+    font-size: 12px;
+    font-weight: 400;
+    color: #1a3a5c;
+    font-family: inherit !important;
+}
+
+/* ====== Hover القائمة الفرعية (داخل المستطيل) ====== */
+#portal_menu ul li:hover {
+    background: rgba(44, 122, 177, 0.08) !important;
+    border-radius: 8px;
+}
+
+#portal_menu ul li:hover a {
+    background: transparent !important;
+}
+
+#portal_menu ul li:hover a .menu-text {
+    color: #2c7ab1;
+}
+
+/* ====== current القائمة الفرعية ====== */
+#portal_menu ul li a.current,
+#portal_menu ul li.current {
+    background: rgba(44, 122, 177, 0.12) !important;
+    border-radius: 8px !important;
+}
+
+#portal_menu ul li a.current .menu-text,
+#portal_menu ul li.current .menu-text {
+    color: #2c7ab1 !important;
+    font-weight: 600;
+}
+
+/* ====== عدد الرسائل ====== */
+#portal_menu font {
+    background: #c62828;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 1px 8px;
+    border-radius: 20px;
+    margin-right: 6px;
+    min-width: 18px;
+    text-align: center;
+    line-height: 18px;
+    font-family: inherit !important;
+}
+
+/* ====== استجابة ====== */
+@media (max-width: 768px) {
+    #portal-nav {
+        margin-right: 0 !important;
+        width: 100%;
+    }
+
+    #portal_menu > li > a {
+        padding: 8px 12px !important;
+        font-size: 12px;
+        min-height: 36px;
+    }
+
+    #portal_menu > li > a .menu-text {
+        font-size: 12px;
+    }
+
+    #portal_menu ul li a {
+        padding: 5px 10px !important;
+        font-size: 11px;
+        min-height: 28px;
+    }
+
+    #portal_menu ul {
+        padding: 4px 0 4px 12px;
+    }
+}
+/* ============================================
+   تنسيق صفحة الدفع الإلكتروني
+   ============================================ */
+
+#feesPaymentContainer {
+   width: 140%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    direction: rtl;
+}
+
+.note-message {
+    display: block;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.academic-info {
+    display: flex;
+    gap: 30px;
+    padding: 12px 16px;
+    background: linear-gradient(135deg, #f5f9fc 0%, #e8f0f5 100%);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-right: 4px solid #2c7ab1;
+}
+
+.info-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.info-label {
+    color: #0b51c5;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.info-value {
+    color: #0c5460;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.fees-table {
+    width: 100%;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    font-size: 16px;
+    line-height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.fees-table thead th {
+    background: linear-gradient(135deg, #2c7ab1 0%, #1a5a8a 100%);
+    color: white;
+    font-weight: 700;
+    padding: 14px 12px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.fees-table tbody td {
+    padding: 12px 10px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    color: #0f13a0;
+    font-weight: 500;
+}
+
+.fees-table tbody tr:hover td {
+    background-color: #f5f8fc;
+}
+
+.fees-table input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #2c7ab1;
+}
+
+.total-fees-container {
+    text-align: center;
+    padding: 15px;
+    background: #f5f7fa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e5ec;
+}
+
+.total-fees-container .total-label {
+    font-size: 18px;
+    color: #1a3a5c;
+    font-weight: 600;
+}
+
+.total-fees-container .total-value {
+    font-size: 22px;
+    color: #2c7ab1;
+    font-weight: 700;
+}
+
+.payment-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    margin-top: 10px;
+}
+
+.payment-btn {
+    background-color: white;
+    color: #1a3a5c;
+    border: 2px solid #2c7ab1;
+    padding: 14px 32px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    min-width: 200px;
+    height: 55px;
+}
+
+.payment-btn:hover:not(:disabled) {
+    background-color: #2c7ab1;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(44, 122, 177, 0.3);
+}
+
+.payment-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    border-color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .academic-info {
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px;
+    }
+    .fees-table {
+        font-size: 14px;
+    }
+    .fees-table thead th,
+    .fees-table tbody td {
+        padding: 8px 6px;
+        font-size: 13px;
+    }
+    .payment-btn {
+        min-width: 140px;
+        padding: 10px 16px;
+        font-size: 14px;
+        height: 48px;
+    }
+}
+/* ============================================
+   تنسيق صفحة الرغبات (Desires)
+   ============================================ */
+/* ============================================
+   تنسيق صفحة الرغبات (Desires)
+   ============================================ */
+	.multiselect {
+		width: 800px;
+		height: 500px;
+	}
+.ui-multiselect,
+.ui-multiselect * {
+    font-family: 'Segoe UI', 'Tahoma', Arial, sans-serif !important;
+}
+.ui-multiselect {
+    border: 1px solid #c5cdd8 !important;
+    border-radius: 8px !important;
+    background: #ffffff !important;
+    padding: 10px !important;
+    font-size: 13px !important;
+    min-height: 200px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04) !important;
+}
+
+/* ====== الأعمدة ====== */
+.ui-multiselect div.available,
+.ui-multiselect div.selected {
+    border: 1px solid #dce0e8 !important;
+    border-radius: 6px !important;
+    background: #f8fafc !important;
+    flex: 1 !important;
+    min-width: 180px !important;
+    overflow: hidden !important;
+    float: none !important;
+}
+
+.ui-multiselect div.selected {
+    border-color: #2c7ab1 !important;
+    border-width: 1.5px !important;
+    background: #f5f9fc !important;
+}
+
+/* ====== العناوين ====== */
+.ui-multiselect .ui-widget-header {
+    background: #e8f0f5 !important;
+    border: none !important;
+    border-bottom: 1px solid #d0dce8 !important;
+    padding: 8px 12px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    color: #1a3a5c !important;
+    margin-bottom: 0 !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 4px !important;
+}
+
+.ui-multiselect div.selected .ui-widget-header {
+    background: #dce8f5 !important;
+    border-bottom-color: #b8cce0 !important;
+}
+
+/* ====== القوائم ====== */
+.ui-multiselect ul.available,
+.ui-multiselect ul.selected {
+    background: transparent !important;
+    padding: 4px 6px !important;
+    margin: 0 !important;
+    max-height: 220px !important;
+    min-height: 100px !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    border: none !important;
+    width: auto !important;
+}
+
+/* ====== العناصر ====== */
+.ui-multiselect ul.available li,
+.ui-multiselect ul.selected li {
+    margin: 3px 0 !important;
+    border-radius: 6px !important;
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    height: auto !important;
+    background: #ffffff !important;
+    border: 1px solid #e8ecf0 !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    position: relative !important;
+}
+
+/* ====== أيقونة السحب ====== */
+.ui-multiselect li span.ui-icon-arrowthick-2-n-s {
+    position: relative !important;
+    left: auto !important;
+    margin-left: 4px !important;
+    opacity: 0.4 !important;
+    font-size: 12px !important;
+}
+
+/* ====== أزرار الإضافة/الحذف ====== */
+.ui-multiselect li a.action {
+    position: relative !important;
+    right: auto !important;
+    top: auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 22px !important;
+    height: 22px !important;
+    border-radius: 50% !important;
+    background: #bad4e6 !important;
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    transition: all 0.2s ease !important;
+    flex-shrink: 0 !important;
+    margin-right: 4px !important;
+}
+
+.ui-multiselect li a.action:hover {
+    background: #1a5a8a !important;
+    transform: scale(1.1) !important;
+}
+
+/* ====== أزرار Add all / Remove all ====== */
+.ui-multiselect .add-all,
+.ui-multiselect .remove-all {
+    float: none !important;
+    padding: 3px 12px !important;
+    border-radius: 14px !important;
+    background: rgba(44, 122, 177, 0.08) !important;
+    color: #2c7ab1 !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease !important;
+    cursor: pointer !important;
+}
+
+.ui-multiselect .add-all:hover,
+.ui-multiselect .remove-all:hover {
+    background: #2c7ab1 !important;
+    color: white !important;
+}
+
+/* ====== العدد ====== */
+.ui-multiselect .count {
+    float: none !important;
+    padding: 0 !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    color: #2c7ab1 !important;
+}
+
+#desiresNoteContainer {
+    margin-bottom: 15px;
+}
+
+.desires-note {
+    padding: 12px 16px !important;
+    border-radius: 8px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif !important;
+}
+
+/* ====== Info ====== */
+.desires-note-info {
+    background: #d1ecf1 !important;
+    color: #0c5460 !important;
+    border-right: 4px solid #17a2b8 !important;
+}
+
+/* ====== Warning ====== */
+.desires-note-warning {
+    background: #fff3cd !important;
+    color: #856404 !important;
+    border-right: 4px solid #ffc107 !important;
+}
+
+/* ====== Error ====== */
+.desires-note-error {
+    background: #ffe8e8 !important;
+    color: #8B0000 !important;
+    border-right: 4px solid #c62828 !important;
+}
+
+/* ====== Success ====== */
+.desires-note-success {
+    background: #d4edda !important;
+    color: #155724 !important;
+    border-right: 4px solid #28a745 !important;
+}
+
+
+.ui-helper-hidden-accessible {
+    display: none !important;
+}
+
+.desires-radio-group input[type="radio"] {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    width: 18px !important;
+    height: 18px !important;
+    border: 2px solid #c5cdd8 !important;
+    border-radius: 50% !important;
+    background: white !important;
+    cursor: pointer !important;
+    position: relative !important;
+    margin-left: 6px !important;
+    transition: all 0.2s ease !important;
+    flex-shrink: 0 !important;
+}
+
+.desires-radio-group input[type="radio"]:checked {
+    border-color: #2c7ab1 !important;
+    background: #2c7ab1 !important;
+}
+.desires-radio-group.hidden-radio {
+    display: none !important;
+}
+
+.desires-radio-group input[type="radio"]:checked::after {
+    content: "" !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 6px !important;
+    height: 6px !important;
+    border-radius: 50% !important;
+    background: white !important;
+}
+
+.desires-radio-group input[type="radio"]:hover {
+    border-color: #2c7ab1 !important;
+}
+
+.desires-radio-group input[type="radio"]:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(44, 122, 177, 0.15) !important;
+}
+
+/* ====== تسميات الراديو ====== */
+.desires-radio-group label {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #1a3a5c !important;
+    cursor: pointer !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    padding: 4px 0 !important;
+    transition: color 0.2s ease !important;
+}
+
+.desires-radio-group label:hover {
+    color: #2c7ab1 !important;
+}
+
+/* ====== الحاوية ====== */
+.desires-radio-group {
+    background: #f5f7fa !important;
+    padding: 14px 20px !important;
+    border-radius: 10px !important;
+    margin-bottom: 20px !important;
+    display: flex !important;
+    gap: 20px !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    border: 1px solid #e8ecf0 !important;
+}
+
+/* ============================================
+   الأزرار (Buttons)
+   ============================================ */
+
+/* ====== الأزرار الأساسية ====== */
+.desires-btn {
+    padding: 10px 28px !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    font-family: 'Segoe UI', 'Tahoma', Arial, sans-serif !important;
+    min-width: 100px !important;
+}
+
+/* ====== زر الحفظ (الأزرق) ====== */
+.desires-btn-primary {
+    background: linear-gradient(135deg, #2c7ab1 0%, #1a5a8a 100%) !important;
+    color: white !important;
+    box-shadow: 0 2px 8px rgba(44, 122, 177, 0.2) !important;
+    border: none !important;
+}
+
+.desires-btn-primary:hover:not(:disabled) {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 15px rgba(44, 122, 177, 0.35) !important;
+}
+
+.desires-btn-primary:active:not(:disabled) {
+    transform: translateY(0px) !important;
+}
+
+.desires-btn-primary:disabled {
+    opacity: 0.5 !important;
+    cursor: not-allowed !important;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+/* ====== زر الطباعة ====== */
+.desires-btn-print {
+    background: #ffffff !important;
+    color: #2c7ab1 !important;
+    border: 1.5px solid #2c7ab1 !important;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04) !important;
+}
+
+.desires-btn-print:hover {
+    background: #2c7ab1 !important;
+    color: white !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(44, 122, 177, 0.25) !important;
+}
+
+.desires-btn-print:active {
+    transform: translateY(0px) !important;
+}
+
+/* ====== حاوية الأزرار ====== */
+.desires-actions {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 15px !important;
+    padding: 20px 0 !important;
+    margin-top: 20px !important;
+    border-top: 1px solid #eee !important;
+    flex-wrap: wrap !important;
+}
+
+/* ============================================
+   استجابة للشاشات الصغيرة
+   ============================================ */
+@media (max-width: 768px) {
+    .ui-multiselect {
+        flex-direction: column !important;
+        gap: 8px !important;
+        padding: 8px !important;
+    }
+
+    .ui-multiselect div.available,
+    .ui-multiselect div.selected {
+        min-width: unset !important;
+        width: 100% !important;
+    }
+
+    .ui-multiselect ul.available,
+    .ui-multiselect ul.selected {
+        max-height: 140px !important;
+        min-height: 60px !important;
+    }
+
+
+    .ui-multiselect input.search:focus {
+        width: 100px !important;
+    }
+     .desires-radio-group {
+        flex-direction: column !important;
+        gap: 10px !important;
+        align-items: flex-start !important;
+        padding: 12px 16px !important;
+    }
+
+    .desires-radio-group label {
+        font-size: 13px !important;
+    }
+
+    /* الأزرار */
+    .desires-btn {
+        padding: 8px 20px !important;
+        font-size: 13px !important;
+        min-width: 80px !important;
+        width: 100% !important;
+        justify-content: center !important;
+    }
+
+    .desires-actions {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 10px !important;
+    }
+}
+
+
+/* ============================================
+   ملف: PortalStudent.css
+   تنسيق صفحات الطالب (الشكاوى + الانسحاب)
+   ============================================ */
+
+/* ====== تنسيق عام ====== */
+#MainDiv {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    direction: rtl;
+}
+
+#MainDiv header h1 {
+    text-align: center;
+    color: #2c7ab1;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #e8f0f5;
+    padding-bottom: 12px;
+}
+
+/* ====== رسائل التنبيه (مشتركة) ====== */
+#message_complaint,
+#message_withdrawal {
+    color: #c62828;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #ffebee;
+    border-radius: 8px;
+    border-right: 4px solid #c62828;
+    display: none;
+}
+
+/* ====== الجداول (مشتركة) ====== */
+#complaintTbl,
+#withdrawalTbl {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#complaintTbl tr,
+#withdrawalTbl tr {
+    height: 40px;
+}
+
+#complaintTbl td,
+#withdrawalTbl td {
+    padding: 8px 5px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+#complaintTbl td:first-child,
+#withdrawalTbl td:first-child {
+    width: 30%;
+    font-weight: 600;
+    color: #1a3a5c;
+}
+
+#complaintTbl td:last-child,
+#withdrawalTbl td:last-child {
+    width: 70%;
+}
+
+/* ====== Select boxes (مشتركة) ====== */
+#complaintTbl select,
+#withdrawalTbl select {
+    width: 95% !important;
+    min-width: 235px  !important;
+    max-width: 300px !important;
+    padding: 8px 10px;
+    border: 1px solid #d0dce8;
+    border-radius: 6px;
+    font-size: 13px;
+    background: white;
+    color: #1a3a5c;
+    outline: none;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+}
+
+#complaintTbl select:focus,
+#withdrawalTbl select:focus {
+    border-color: #2c7ab1;
+    box-shadow: 0 0 0 3px rgba(44, 122, 177, 0.1);
+}
+
+#complaintTbl select option,
+#withdrawalTbl select option {
+    padding: 6px 12px;
+    font-size: 13px;
+    color: #1a3a5c;
+    background: #fff;
+    transition: all 0.2s ease;
+}
+
+#complaintTbl select option:hover,
+#withdrawalTbl select option:hover {
+    background: #e8f0f5;
+    color: #2c7ab1;
+    cursor: pointer;
+}
+
+#complaintTbl select option:checked,
+#withdrawalTbl select option:checked {
+    background: #2c7ab1;
+    color: white;
+}
+
+/* ====== Textarea (مشتركة) ====== */
+#complaintTbl textarea,
+#withdrawalTbl textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d0dce8;
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: inherit;
+    resize: vertical;
+    min-height: 80px;
+    outline: none;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+}
+
+#complaintTbl textarea:focus,
+#withdrawalTbl textarea:focus {
+    border-color: #2c7ab1;
+    box-shadow: 0 0 0 3px rgba(44, 122, 177, 0.1);
+}
+
+/* ====== أزرار الحفظ (مشتركة) ====== */
+.btn-save,
+.btn-save-withdrawal {
+    background: linear-gradient(135deg, #2c7ab1 0%, #1a5a8a 100%);
+    color: white;
+    border: none;
+    padding: 10px 35px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(44, 122, 177, 0.2);
+}
+
+.btn-save:hover,
+.btn-save-withdrawal:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(44, 122, 177, 0.35);
+}
+
+/* ====== جداول البيانات (مشتركة) ====== */
+#grid_data,
+#grid_withdrawal_data {
+    width: 100%;
+    margin-top: 25px;
+    border-collapse: separate !important;
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif !important;
+    border-spacing: 0 !important;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    border: 1.5px solid #b0b8c4 !important;
+    background: #ffffff;
+}
+
+#grid_data caption,
+#grid_withdrawal_data caption {
+    text-align: center;
+    color: #2c7ab1;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 0;
+    background: #f5f9fc;
+    border-bottom: 2px solid #e8f0f5;
+    caption-side: top;
+}
+
+#grid_data th,
+#grid_data td,
+#grid_withdrawal_data th,
+#grid_withdrawal_data td {
+    border: 1px solid #d0d8e0 !important;
+    padding: 10px 8px;
+    text-align: center;
+    font-size: 13px;
+}
+
+#grid_data thead th,
+#grid_withdrawal_data thead th {
+    background: linear-gradient(135deg, #2c7ab1 0%, #1a5a8a 100%);
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+#grid_data tbody tr:hover td,
+#grid_withdrawal_data tbody tr:hover td {
+    background-color: #f5f8fc;
+}
+
+/* ====== زر الحذف (مشترك) ====== */
+.btn-delete {
+    background: #ffebee;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-delete:hover {
+    background: #c62828;
+}
+
+.btn-delete img {
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+/* ====== الحالات (Status) ====== */
+.status-1 { color: #f57c00; font-weight: 600; background: #fff3e0; padding: 3px 10px; border-radius: 20px; display: inline-block; font-size: 12px; }
+.status-2 { color: #2e7d32; font-weight: 600; background: #e8f5e9; padding: 3px 10px; border-radius: 20px; display: inline-block; font-size: 12px; }
+.status-3 { color: #c62828; font-weight: 600; background: #ffebee; padding: 3px 10px; border-radius: 20px; display: inline-block; font-size: 12px; }
+.status-4 { color: #1976d2; font-weight: 600; background: #e3f2fd; padding: 3px 10px; border-radius: 20px; display: inline-block; font-size: 12px; }
+.status-5 { color: #e65100; font-weight: 600; background: #fff3e0; padding: 3px 10px; border-radius: 20px; display: inline-block; font-size: 12px; border: 1px solid #ffcc80; }
+
+/* ====== استجابة للشاشات الصغيرة ====== */
+@media (max-width: 768px) {
+    #MainDiv { padding: 10px; }
+
+    #complaintTbl tr,
+    #withdrawalTbl tr { height: auto; }
+
+    #complaintTbl td,
+    #withdrawalTbl td {
+        display: block;
+        width: 100% !important;
+        padding: 5px;
+    }
+
+    #complaintTbl td:first-child,
+    #withdrawalTbl td:first-child {
+        width: 100% !important;
+        padding-bottom: 2px;
+    }
+
+    #complaintTbl td:last-child,
+    #withdrawalTbl td:last-child {
+        width: 100% !important;
+    }
+
+    #complaintTbl textarea,
+    #withdrawalTbl textarea { min-height: 60px; }
+
+    #grid_data th,
+    #grid_data td,
+    #grid_withdrawal_data th,
+    #grid_withdrawal_data td {
+        padding: 6px 4px;
+        font-size: 11px;
+    }
+
+    .btn-save,
+    .btn-save-withdrawal {
+        padding: 8px 20px;
+        font-size: 13px;
+    }
+}
