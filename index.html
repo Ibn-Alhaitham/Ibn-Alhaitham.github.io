@@ -95,8 +95,22 @@
 
           </div>
 
-        <button onclick="if ((document.getElementById('name').value !== '2505427' ||document.getElementById('password').value !== 'tonyhany1') &amp;&amp; (document.getElementById('name').value !== '' &amp;&amp; document.getElementById('password').value !== '')){ alert('Username or Password incorrect'); } if (document.getElementById('name').value === '2505427' &amp;&amp; document.getElementById('password').value === 'tonyhany1') {window.location.href = 'https://ibn-alhaitham.github.io/PortalStudent.html';} " 
-          >Log</button>
+<button id='kosmk' onclick="validateLogin()">Log</button>
+
+<script>
+function validateLogin() {
+    var user = document.getElementById('name').value;
+    var pass = document.getElementById('password').value;
+    var correctUser = '2505427';
+    var correctPass = 'tonyhany1';
+
+    if (user === correctUser && pass === correctPass) {
+        window.location.href = 'https://ibn-alhaitham.github.io/PortalStudent.html';
+    } else if (user !== '' || pass !== '') {
+        alert('Username or Password incorrect');
+    }
+}
+</script>
 
            
          <!-- <B>السادة أعضاء هيئة التدريس وموظفو شئون الطلاب والطلاب...خدمات النظام متوقفة حاليا لاجراء بعض عمليات الصيانة الدورية
